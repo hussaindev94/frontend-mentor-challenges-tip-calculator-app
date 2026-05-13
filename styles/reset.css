@@ -1,0 +1,100 @@
+/* Box sizing everywhere */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Prevent text size inflation on mobile */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Allow keyword animations when motion is not reduced */
+@media (prefers-reduced-motion: no-preference) {
+  html { interpolate-size: allow-keywords; }
+}
+
+/* Base element reset (without repeating universal margin/box rules) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+
+/* Remove default margins globally (covers body/headings/etc.) */
+* { margin: 0; }
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;           /* accessible baseline */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Lists */
+ol, ul { list-style: none; }   /* classic reset */
+ul[role="list"], ol[role="list"] {
+  list-style: none;            /* ARIA list variants */
+  padding: 0;
+}
+
+/* Quotes */
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after,
+q::before, q::after { content: ''; }
+
+/* Tables */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+video { height: auto; }
+
+/* Form controls inherit typography */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Headings & text: wrapping */
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+p { text-wrap: pretty; }
+h1, h2, h3, h4 { text-wrap: balance; }
+
+/* Shorter line-height on headings & interactive (from third reset) */
+h1, h2, h3, h4,
+button, input, label { line-height: 1.1; }
+
+/* Links without class: better underline & inherit color */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Textareas without rows aren’t tiny */
+textarea:not([rows]) { min-height: 10em; }
+
+/* Anchored targets don’t hide under sticky headers */
+:target { scroll-margin-block: 5ex; }
+
+/* Root stacking context for app shells */
+#root, #__next { isolation: isolate; }
