@@ -1,4 +1,7 @@
 /*This file will contain the fonts using @font-face rule*/
 @font-face {
-
+    font-family: "space-mono";
+    src: url("../assets/fonts/space-mono.bold.ttf");
+    font-weight: 700;
+    font-display: swap;
 }

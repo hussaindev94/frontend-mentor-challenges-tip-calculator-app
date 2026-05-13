@@ -1,0 +1,94 @@
+/*Custom variables*/
+:root {
+  /*Spacing variables*/
+  --spacing-0: 0rem;
+  --spacing-100: 0.8rem;
+  --spacing-200: 1.6rem;
+  --spacing-300: 2.4rem;
+  --spacing-400: 3.2rem;
+  --spacing-600: 4.8rem;
+  --spacing-1000: 8rem;
+  --spacing-1200: 9.6rem;
+  --spacing-1500: 12rem;
+  --spacing-1600: 12.8rem;
+  /*Color varaibles*/
+  --white-color: hsl(0, 100%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --gray-600-color: hsl(180, 25%, 32%);
+  --gray-550-color: hsl(180, 18%, 40%);
+  --gray-500-color: hsl(186, 14%, 43%);
+  --gray-400-color: hsl(184, 14%, 56%);
+  --gray-300-color: hsl(184, 19%, 68%);
+  --gray-200-color: hsl(185, 41%, 84%);
+  --gray-50-color: hsl(186, 47%, 97%);
+  --green-900-color: hsl(183, 100%, 15%);
+  --green-800-color: hsl(183, 85%, 21%);
+  --green-750-color: hsl(183, 79%, 24%);
+  --green-400-color: hsl(172, 67%, 45%);
+  --green-200-color: hsl(173, 61%, 77%);
+  --orange-400-color: hsl(13, 70%, 60%);
+  /*Typography varaibles*/
+  /*text preset1 varaibles*/
+  --text-preset1-font-family:
+    "space-mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset1-font-size: 4.8rem;
+  --text-preset1-line-height: 7.1rem;
+  --text-preset1-letter-spacing: -0.1rem;
+
+  /*text preset2 varaibles*/
+  --text-preset2-font-family:
+    "space-mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset2-font-size: 3.2rem;
+  --text-preset2-line-height: 4.7rem;
+  --text-preset2-letter-spacing: -0.067rem;
+  /*text preset 3 varaibles*/
+  --text-preset3-font-family:
+    "space-mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset3-font-size: 2.4rem;
+  --text-preset3-line-height: 6.3rem;
+  --text-preset3-letter-spacing: 0rem;
+  /*text preset4 varaibles*/
+  --text-preset4-font-family:
+    "space-mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset4-font-size: 2rem;
+  --text-preset4-line-height: 3rem;
+  --text-preset4-letter-spacing: -0.1rem;
+  /*text preset5 varaibles*/
+  --text-preset5-font-family:
+    "space-mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset5-font-size: 1.6rem;
+  --text-preset5-line-height: 2.4rem;
+  --text-preset5-letter-spacing: 0rem;
+  /*text preset6 varaibles*/
+  --text-preset6-font-family:
+    "space-mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset6-font-size: 1.3rem;
+  --text-preset6-line-height: 1.9rem;
+  --text-preset6-letter-spacing: 0rem;
+}
+
+/*HTML Styles*/
+html {
+  font-size: 62.5%;
+}
+
+/*Body Styles*/
+body {
+  font-size: 1.4rem;
+}
+
+/*Footer styles*/
+.footer {
+  font-size: 0.6875rem;
+  text-align: center;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
