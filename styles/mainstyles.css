@@ -81,6 +81,13 @@ html {
 /*Body Styles*/
 body {
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-200-color);
+}
+.main-img {
+  margin-top: 5rem;
 }
 
 /*Footer styles*/

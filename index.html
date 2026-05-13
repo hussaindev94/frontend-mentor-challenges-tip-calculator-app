@@ -21,26 +21,66 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+  <img src="./assets/images/logo.svg" alt="" aria-label="hidden" loading="lazy" width="86.66" height="53.14" class="main-img">
 
-  Bill
+  <main class="main-container">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <section class="content-container">
 
-  Number of People
+      <section class="bill-container">
 
-  Tip Amount
-  / person
+        <div class="bill-header">
+          <label for="bill" class="bill-label">Bill</label>
 
-  Total
-  / person
+          <div class="bill-amount-container">
+            <input type="text" name="bill" id="bill" class="bill-input">
+          </div>
 
-  Reset
+        </div>
+
+        <div class="tip-selection-container">
+          <label for="tip">Select Tip %</label>
+          <div class="tip-options-container">
+            <button type="button" title="5%" class="tip-button">5%</button>
+            <button type="button" title="10%" class="tip-button">10%</button>
+            <button type="button" title="15%" class="tip-button">15%</button>
+            <button type="button" title="25%" class="tip-button">25%</button>
+            <button type="button" title="50%" class="tip-button">50%</button>
+            <input type="number" class="tip-button" id="tip" title="tip-input" placeholder="Custom">
+          </div>
+
+        </div>
+
+        <div class="people-container">
+          <div class="people-container-labels">
+            <label for="group" class="people-label">Number of People</label>
+            <p class="error-message">Can't be zero</p>
+          </div>
+          <div class="people-input-container">
+            <input type="number" title="group" id="group" class="people-input">
+          </div>
+        </div>
+
+      </section>
+
+      <section class="results-container">
+        <div class="results-content">
+          <div class="result-details">
+            <div class="tip-amount-row">
+              <p>Tip Amount <br> <span>/ person</span> </p>
+              <p>4.27$</p>
+            </div>
+            <div class="total-amount-row">
+              <p>Totla <br> <span>/ person</span> </p>
+              <p>32.79$</p>
+            </div>
+          </div>
+          <button type="reset" class="result-button">RESET</button>
+        </div>
+      </section>
+    </section>
+
+  </main>
 
   <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
