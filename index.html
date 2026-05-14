@@ -33,30 +33,41 @@
           <label for="bill" class="bill-label">Bill</label>
 
           <div class="bill-amount-container">
+            <img src="./assets/images/icon-dollar.svg" alt="" aria-label="hidden" class="dollar-icon" loading="lazy" width="11" height="16">
             <input type="text" name="bill" id="bill" class="bill-input">
           </div>
 
         </div>
 
         <div class="tip-selection-container">
-          <label for="tip">Select Tip %</label>
+          <label for="tip" class="tip-label">Select Tip %</label>
+
           <div class="tip-options-container">
-            <button type="button" title="5%" class="tip-button">5%</button>
-            <button type="button" title="10%" class="tip-button">10%</button>
-            <button type="button" title="15%" class="tip-button">15%</button>
-            <button type="button" title="25%" class="tip-button">25%</button>
-            <button type="button" title="50%" class="tip-button">50%</button>
-            <input type="number" class="tip-button" id="tip" title="tip-input" placeholder="Custom">
+            <div class="row">
+              <button type="button" title="5%" class="tip-button">5%</button>
+              <button type="button" title="10%" class="tip-button">10%</button>
+            </div>
+            <div class="row">
+              <button type="button" title="15%" class="tip-button">15%</button>
+              <button type="button" title="25%" class="tip-button">25%</button>
+            </div>
+            <div class="row">
+              <button type="button" title="50%" class="tip-button">50%</button>
+              <input type="number" class="custom-tip-input" id="tip" title="custom-tip-input" placeholder="Custom">
+            </div>
           </div>
 
         </div>
 
         <div class="people-container">
+
           <div class="people-container-labels">
             <label for="group" class="people-label">Number of People</label>
-            <p class="error-message">Can't be zero</p>
+            <p class="error-message" >Can't be zero</p>
           </div>
+
           <div class="people-input-container">
+            <img src="./assets/images/icon-person.svg" alt="" loading="lazy" aria-label="hidden" width="15" height="18" class="people-icon">
             <input type="number" title="group" id="group" class="people-input">
           </div>
         </div>
@@ -68,11 +79,11 @@
           <div class="result-details">
             <div class="tip-amount-row">
               <p>Tip Amount <br> <span>/ person</span> </p>
-              <p>4.27$</p>
+              <p>$4.27</p>
             </div>
             <div class="total-amount-row">
-              <p>Totla <br> <span>/ person</span> </p>
-              <p>32.79$</p>
+              <p>Total<br> <span>/ person</span> </p>
+              <p>$32.79</p>
             </div>
           </div>
           <button type="reset" class="result-button">RESET</button>
