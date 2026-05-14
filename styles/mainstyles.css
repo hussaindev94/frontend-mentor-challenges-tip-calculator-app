@@ -126,7 +126,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--spacing-100);
-  padding: 0 var(--spacing-100);
 }
 .bill-label {
   font-family: var(--text-preset5-font-family);
@@ -176,7 +175,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--spacing-200);
-  padding: 0 var(--spacing-100);
 }
 .tip-label {
   font-family: var(--text-preset5-font-family);
@@ -186,6 +184,7 @@ body {
   color: var(--gray-500-color);
 }
 .tip-options-container {
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -240,7 +239,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--spacing-100);
-  padding: 0 var(--spacing-100);
 }
 .people-container-labels {
   align-self: stretch;
