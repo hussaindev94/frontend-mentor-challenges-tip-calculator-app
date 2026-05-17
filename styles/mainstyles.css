@@ -277,6 +277,9 @@ body {
 .people-container-labels .error-message {
   color: var(--orange-400-color);
 }
+.hide-error {
+  display: none;
+}
 .show-error {
   display: block;
 }
@@ -315,7 +318,7 @@ body {
 .people-input:focus {
   outline: 0.2rem solid var(--green-400-color);
 }
-.error-state {
+.people-input:focus.error-state {
   outline: 0.2rem solid var(--orange-400-color);
 }
 /*Section 2 Styles*/
@@ -371,7 +374,9 @@ body {
 }
 
 .tip-amount-row p:last-child,
-.total-amount-row p:last-child {
+.tip-amount-row p:last-child span,
+.total-amount-row p:last-child,
+.total-amount-row p:last-child span {
   color: var(--green-400-color);
 
   font-family: var(--text-preset2-font-family);

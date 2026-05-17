@@ -25,7 +25,7 @@
 
   <main class="main-container">
 
-    <section class="content-container">
+    <form method="get" class="content-container">
 
       <section class="bill-container">
 
@@ -63,7 +63,7 @@
 
           <div class="people-container-labels">
             <label for="group" class="people-label">Number of People</label>
-            <p class="error-message" hidden>Can't be zero</p>
+            <p class="error-message hide-error">Can't be zero</p>
           </div>
 
           <div class="people-input-container">
@@ -79,18 +79,17 @@
           <div class="result-details">
             <div class="tip-amount-row">
               <p>Tip Amount <br> <span>/ person</span> </p>
-              <p>$0.00</p>
+              <p> <span>$</span>0.00</p>
             </div>
             <div class="total-amount-row">
               <p>Total<br> <span>/ person</span> </p>
-              <p>$0.00
-              </p>
+              <p><span>$</span>0.00</p>
             </div>
           </div>
           <button type="reset" class="result-button">RESET</button>
         </div>
       </section>
-    </section>
+    </form>
 
   </main>
 
