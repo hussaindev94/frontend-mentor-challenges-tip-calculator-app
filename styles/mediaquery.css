@@ -1,14 +1,63 @@
-/*mobile display range*/
-@media (320px <= inline-size <= 375px){
-
-}
-
 /*tablet display range*/
-@media (400px <= inline-size <= 1000px){
-
+@media (min-width: 44em) {
+  .main-container {
+    border-radius: 2.5rem;
+    padding: 4.8rem 8rem;
+    width: 60.8rem;
+  }
+  .tip-options-container {
+    justify-content: space-between;
+  }
+  .tip-button,
+  .custom-tip-input {
+    width: 13.8rem;
+  }
+  .results-container {
+    padding: 4.3rem 4.75rem;
+    gap: 1.6rem;
+  }
+  .results-content {
+    gap: 0.8rem;
+  }
+  .tip-amount-row p:last-child,
+  .tip-amount-row p:last-child span,
+  .total-amount-row p:last-child,
+  .total-amount-row p:last-child span {
+    font-size: 4.8rem;
+    letter-spacing: -0.1rem;
+    line-height: 7.1rem;
+  }
 }
 
 /*disktop display range*/
-@media (1001px <= inline-size <= 1440px){
-
+@media (min-width: 63em) {
+  .main-container {
+    padding: 3.2rem;
+    width: 92rem;
+  }
+  .content-container {
+    flex-direction: row;
+    gap: 4.8rem;
+  }
+  .bill-container {
+    width: 37.9rem;
+    gap: 4rem;
+  }
+  .tip-options-container {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .tip-button,
+  .custom-tip-input {
+    width: 11.6rem;
+  }
+  .results-container {
+    width: 413px;
+    padding: 3.75rem 4rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .results-content {
+    gap: 12.8rem;
+  }
 }
