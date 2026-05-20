@@ -131,10 +131,6 @@ body {
   gap: var(--spacing-100);
 }
 .bill-label {
-  font-family: var(--text-preset5-font-family);
-  font-size: var(--text-preset5-font-size);
-  letter-spacing: var(--text-preset5-letter-spacing);
-  line-height: var(--text-preset5-line-height);
   color: var(--gray-500-color);
 }
 .bill-amount-container {
@@ -187,10 +183,6 @@ body {
   gap: var(--spacing-200);
 }
 .tip-label {
-  font-family: var(--text-preset5-font-family);
-  font-size: var(--text-preset5-font-size);
-  letter-spacing: var(--text-preset5-letter-spacing);
-  line-height: var(--text-preset5-line-height);
   color: var(--gray-500-color);
 }
 .tip-options-container {
@@ -219,13 +211,6 @@ body {
   letter-spacing: var(--text-preset3-letter-spacing);
   line-height: var(--text-preset3-line-height);
 }
-/* .row {
-  align-self: stretch;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--spacing-200);
-} */
 .tip-button:hover {
   background-color: var(--green-200-color);
   color: var(--green-900-color);
@@ -266,12 +251,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  font-family: var(--text-preset5-font-family);
-  font-size: var(--text-preset5-font-size);
-  letter-spacing: var(--text-preset5-letter-spacing);
-  line-height: var(--text-preset5-line-height);
-
   height: 24px;
 }
 .people-container-labels .people-label {
@@ -321,7 +300,8 @@ body {
 .people-input:focus {
   outline: 0.2rem solid var(--green-400-color);
 }
-.people-input:focus.error-state {
+.people-input:focus.error-state,
+.people-input.error-state {
   outline: 0.2rem solid var(--orange-400-color);
 }
 /*Section 2 Styles*/
@@ -412,9 +392,20 @@ body {
   color: var(--green-800-color);
   background-color: var(--green-750-color);
 }
+/*Common Styles*/
+/*Lable font styles*/
+.bill-label,
+.tip-label,
+.people-container-labels {
+  font-family: var(--text-preset5-font-family);
+  font-size: var(--text-preset5-font-size);
+  letter-spacing: var(--text-preset5-letter-spacing);
+  line-height: var(--text-preset5-line-height);
+}
+
 /*Footer styles*/
 .footer {
-  font-size: 0.6875rem;
+  font-size: 1.2rem;
   text-align: center;
 
   & a {
